@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me</title>
+</head>
+<body>
+<h1 style="position: absolute; left: 200px; top: 200px;">Do you love me?</h1>
+<button style="position: absolute; left: 240px; top: 275px" id="btn" onmouseover="nohover()">Yes</button>
+<button style="position: absolute; left: 345px; top: 275px" name="btn" onclick="no()">No</button>
+<script>
+    function nohover(){
+        let x = Math.random()*window.innerWidth;
+        let y = Math.random()*window.innerHeight;
+        // let x= Math.round(Math.random()*window.innerWidth);
+        // let y= Math.round(Math.random()*window.innerHeight);
+        document.getElementById('btn').style.left= x + 'px';
+        document.getElementById('btn').style.top= y + 'px';
+    }
+    function no(){
+        alert("Why? you don't love me :(");
+    }
+</script>
+</body>
+</html>
